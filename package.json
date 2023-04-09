@@ -2,6 +2,7 @@
   "name": "geek-h5-sh92",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://davi-li.github.io/react-app",
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@testing-library/jest-dom": "^5.16.2",
@@ -41,7 +42,9 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
-    "analyze": "source-map-explorer './build/static/js/*.js'"
+    "analyze": "source-map-explorer './build/static/js/*.js'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
